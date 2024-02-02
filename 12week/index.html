@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Add a comment</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Add a comment</h1>
+        <div>
+            <label for="userName">Ваше имя:</label><br>
+            <input type="text" id="userName" placeholder="Bведите имя" required>
+        </div>
+        <div id="avatarForm">
+        Ссылка на аватар:<br>
+            <input type="text" id="avatarInput" name="avatar">
+            <button class="addAvatar">Отправить</button>
+        </div>
+            <h3>Ваш аватар:</h3>
+            <div class="avatarContainer">
+                <img src="assets/empty_ava.jpg" id="avatarImage" alt="ваш аватар">
+            </div>
+        <div>
+            <textarea name="" id="comment" cols="80" rows="10"></textarea>
+        </div>
+        <button class="add">Добавить комментарий</button>
+        <div class="comment">
+            <div id="commentAvatar"></div>
+            <div id="commentName"></div>
+            <div id="commentText"></div>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>

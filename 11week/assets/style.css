@@ -1,0 +1,58 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: #4b0046;
+}
+.downside{
+    display: grid
+}
+table{
+    border: solid;
+}
+tr{
+    border: solid;
+    /* height: 100px; */
+}
+td{
+    border: solid 1px;
+    /* width: 100px; */
+}
+.picture{
+    height: 100px;
+    width: 100px;
+}
+.description{
+    height: 100px;
+    width: 300px;
+}
+.price{
+    height: 100px;
+    width: 100px;
+}
+img{
+        /* height: 100px; */
+    width: 100px;
+}
+button{
+    width: 250px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    background-color: #bc02b0;
+    border: none;
+    border-radius:2px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    grid-column: 1 / 2;
+}
+.result{
+    grid-column: 2 / 3;
+    padding: 14px 20px;
+    margin: 8px 0;
+    font-size: larger;
+    font-weight: bolder;
+}
