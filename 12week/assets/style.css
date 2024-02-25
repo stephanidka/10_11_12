@@ -24,6 +24,9 @@ h1{
 #avatarImage{
     width: 100px;
 }
+.newAvatarImage{
+    width: 100px;
+}
 #commentName{
     font-weight: bolder;
 }

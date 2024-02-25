@@ -56,3 +56,6 @@ button{
     font-size: larger;
     font-weight: bolder;
 }
+.strike {
+    text-decoration: line-through;
+}

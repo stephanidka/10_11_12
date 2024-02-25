@@ -10,21 +10,23 @@ const commentText = document.getElementById('commentText')
 function getAvatar(){
 
     avatarImage.src = avatarInput.value;
-    avatarInput.value = '';
+    // avatarInput.value = '';
 }
 document.querySelector('.addAvatar').addEventListener('click', getAvatar);
 
 function addComment(){
-    const newAvatar = avatarImage.cloneNode(true);
-    newAvatar.classList.add('newAvatar');
-    commentAvatar.appendChild(newAvatar.cloneNode(true));
+    avatarImage.src = 'assets/empty_ava.jpg';
+    let newAvatar = document.createElement('img');
+    newAvatar.src = avatarInput.value;
+    newAvatar.classList.add('newAvatarImage')
+    commentAvatar.appendChild(newAvatar);
     let inputName = userName.value;
     let words = inputName.trim().split(/\s+/);
     let transformedWords = words.map(function(word) {
         return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     });
     let resultName = transformedWords.join(' ');
-    commentName.textContent = resultName + ":";
+    commentName.textContent = resultName;
     let commentChecked = function(str){
         let lowerStr = str.toLowerCase();
         let modifiedStr = lowerStr.replace(/viagra/g, '***');
@@ -35,9 +37,9 @@ function addComment(){
     let resultComment = commentChecked(result)
     commentText.textContent = resultComment;
 
-
+    userName.value = '';
+    avatarInput.value = '';
+    comment.value = '';
 }
-
-
 
 document.querySelector('.add').addEventListener('click', addComment)
